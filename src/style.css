@@ -1,0 +1,31 @@
+body {
+  background: rgb(166, 210, 221);
+}
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 36px;
+  text-align: center;
+  font-family: sans-serif;
+}
+.top {
+  display: flex;
+  margin: 0 90px 70px 0px;
+}
+.container {
+  max-width: 700px;
+  background: white;
+  display: block;
+  margin: 60px auto;
+  padding: 5%;
+  border-radius: 5px;
+}
+.searchBar {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background: rgb(198, 231, 236);
+  border: 1px solid black;
+}
