@@ -34,12 +34,15 @@ h3 {
   width: 220px;
   display: block;
   margin: 0 auto;
-  font-family: sans-serif;
+  font-family: "Macondo", serif;
+  font-size: 16px;
 }
 /* CURRENT & FORECAST */
 .forecast {
   display: flex;
   justify-content: space-between;
+  font-family: "Macondo", serif;
+  font-size: 15px;
 }
 .current-temp {
   display: flex;
@@ -60,7 +63,7 @@ h3 {
 }
 .today-desctiption {
   font-size: 18px;
-  font-family: sans-serif;
+  font-family: "Macondo", serif;
   text-align: center;
   margin-bottom: 50px;
   border-bottom: 1px solid grey;
@@ -69,7 +72,7 @@ h3 {
 .today-temperature {
   font-size: 33px;
   font-weight: bold;
-  font-family: arial;
+  font-family: "Macondo", serif;
   position: relative;
   left: 50px;
 }
@@ -83,19 +86,24 @@ h3 {
 .today-wind {
   border: 1px solid grey;
   padding: 20px;
+  font-family: "Macondo", serif;
 }
 .today-feels-like {
   border: 1px solid grey;
   padding: 20px;
+  font-family: "Macondo", serif;
 }
 .today-rain {
   border: 1px solid grey;
   padding: 20px;
+  font-family: "Macondo", serif;
 }
 /* SUN/timezone */
 .sun-time {
   display: flex;
   justify-content: space-around;
+  font-family: "Macondo", serif;
+  font-size: 16px;
 }
 .sun-up {
   border: 1px solid grey;
@@ -107,6 +115,8 @@ h3 {
 }
 .timezone {
   text-align: center;
+  font-family: "Macondo", serif;
+  font-size: 16px;
 }
 /* SEARCH BAR */
 .searchCity {
@@ -138,3 +148,14 @@ h3 {
   background: rgb(163, 224, 246);
 }
 /* END SEARCH BAR */
+footer {
+  text-align: center;
+  font-family: sans-serif;
+}
+a {
+  color: rgb(8, 128, 158);
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(60, 153, 176);
+}
