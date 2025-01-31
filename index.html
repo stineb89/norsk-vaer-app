@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Macondo&family=Playwrite+VN:wght@100..400&family=Satisfy&family=Shadows+Into+Light&family=Sixtyfour+Convergence:SCAN@7&display=swap"
+      rel="stylesheet"
+    />
     <title>Norsk værapp - eget prosjekt</title>
   </head>
   <body>
@@ -17,61 +23,86 @@
           width="100px"
           height="100px"
         />
-        <h1>Yr - været der du er</h1>
+        <h1>Yr - din personlige vær app</h1>
       </header>
       <hr />
+      <div class="now-time">I dag er det søndag 26. januar 2025, kl. 11:11</div>
+      <hr />
       <main>
-        <div class="forecast-day">
-          <div class="city-forecast-day">Man</div>
-          <div class="city-forecast-temp">28֯°C/F</div>
+        <div class="forecast">
+          <div class="forecast-day">
+            <div class="city-forecast-day">Man</div>
+            <div class="city-forecast-icon">🌤</div>
+            <div class="city-forecast-temp">18֯°C/F</div>
+          </div>
+          <div class="forecast-day">
+            <div class="city-forecast-day">Tir</div>
+            <div class="city-forecast-icon">🌤</div>
+            <div class="city-forecast-temp">18֯֯°C/F</div>
+          </div>
+          <div class="forecast-day">
+            <div class="city-forecast-day">Ons</div>
+            <div class="city-forecast-icon">🌤</div>
+            <div class="city-forecast-temp">18°C/F</div>
+          </div>
+          <div class="forecast-day">
+            <div class="city-forecast-day">Tor</div>
+            <div class="city-forecast-icon">🌤</div>
+            <div class="city-forecast-temp">18֯֯°C/F</div>
+          </div>
+          <div class="forecast-day">
+            <div class="city-forecast-day">Fre</div>
+            <div class="city-forecast-icon">🌤</div>
+            <div class="city-forecast-temp">18֯°C/F</div>
+          </div>
+          <div class="forecast-day">
+            <div class="city-forecast-day">Lør</div>
+            <div class="city-forecast-icon">🌤</div>
+            <div class="city-forecast-temp">18֯֯°C/F</div>
+          </div>
+          <div class="forecast-day">
+            <div class="city-forecast-day">Søn</div>
+            <div class="city-forecast-icon">🌤</div>
+            <div class="city-forecast-temp">18֯°C/F</div>
+          </div>
         </div>
-        <div class="forecast-day">
-          <div class="city-forecast-day">Tir</div>
-          <div class="city-forecast-icon">🌤</div>
-          <div class="city-forecast-temp">28֯֯°C/F</div>
-        </div>
-        <div class="forecast-day">
-          <div class="city-forecast-day">Ons</div>
-          <div class="city-forecast-icon">🌤</div>
-          <div class="city-forecast-temp">28֯°C/F</div>
-        </div>
-        <div class="forecast-day">
-          <div class="city-forecast-day">Tor</div>
-          <div class="city-forecast-icon">🌤</div>
-          <div class="city-forecast-temp">28֯֯°C/F</div>
-        </div>
-        <div class="forecast-day">
-          <div class="city-forecast-day">Fre</div>
-          <div class="city-forecast-icon">🌤</div>
-          <div class="city-forecast-temp">28֯°C/F</div>
-        </div>
-        <div class="forecast-day">
-          <div class="city-forecast-day">Lør</div>
-          <div class="city-forecast-icon">🌤</div>
-          <div class="city-forecast-temp">28֯֯°C/F</div>
-        </div>
-        <div class="forecast-day">
-          <div class="city-forecast-day">Søn</div>
-          <div class="city-forecast-icon">🌤</div>
-          <div class="city-forecast-temp">28֯°C/F</div>
-        </div>
+        <hr />
+        <form class="searchCity">
+          <input
+            type="search"
+            class="searchBar"
+            placeholder="Search for a city..."
+          />
+          <input type="submit" class="submit" value="Submit" />
+        </form>
         <hr />
         <h2 class="city-name">Oslo</h2>
         <div class="today-desctiption">Skyfri himmel og sol</div>
-        <div class="today-temperatur">
-          20°
-          <span class="celsius-current">C</span>
-          /
-          <span class="fah-current">F</span>
+
+        <div class="current-temp">
+          <div class="today-icon">🌤</div>
+          <div class="today-temperature">
+            20°
+            <span class="celsius-current">C</span>/<span class="fah-current"
+              >F</span
+            >
+          </div>
         </div>
-        <br />
-        Vind:
-        <div class="today-wind">3 m/s</div>
+
+        <div class="current">
+          <div class="today-wind"><strong>Vind:</strong> 3 m/s</div>
+          <div class="today-feels-like"><strong>Føles som:</strong> -4</div>
+          <div class="today-rain"><strong>Regn:</strong> 0,2 mm</div>
+        </div>
+        <hr />
         <h3>Solnedgang/Soloppgang</h3>
         <div class="sun-time">
           <div class="sun-up"><strong>Sol opp</strong> 09:45</div>
           <div class="sun-down"><strong>Sol ned</strong> 13:34</div>
         </div>
+
+        <h3>Tidsone</h3>
+        <div class="timezone">Europa/Oslo</div>
       </main>
 
       <footer></footer>

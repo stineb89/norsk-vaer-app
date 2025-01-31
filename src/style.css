@@ -10,22 +10,131 @@ h1 {
   text-align: center;
   font-family: sans-serif;
 }
+h3 {
+  text-align: center;
+  margin: 40px;
+}
 .top {
   display: flex;
-  margin: 0 90px 70px 0px;
+  margin: 30px 0 50px 0;
 }
 .container {
-  max-width: 700px;
+  max-width: 800px;
   background: white;
   display: block;
-  margin: 60px auto;
+  margin: 20px auto;
   padding: 5%;
   border-radius: 5px;
+  border: 3px solid blue;
+}
+.now-time {
+  text-align: center;
+  padding: 3%;
+  border: 1px solid rgb(213, 233, 239);
+  width: 220px;
+  display: block;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+/* CURRENT & FORECAST */
+.forecast {
+  display: flex;
+  justify-content: space-between;
+}
+.current-temp {
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 70px;
+}
+.city-name {
+  font-family: "Macondo", serif;
+  font-weight: bold;
+  font-size: 56px;
+  text-align: center;
+}
+.today-icon {
+  font-size: 70px;
+  position: relative;
+  left: 20px;
+  bottom: 25px;
+}
+.today-desctiption {
+  font-size: 18px;
+  font-family: sans-serif;
+  text-align: center;
+  margin-bottom: 50px;
+  border-bottom: 1px solid grey;
+  padding: 10px;
+}
+.today-temperature {
+  font-size: 33px;
+  font-weight: bold;
+  font-family: arial;
+  position: relative;
+  left: 50px;
+}
+.current {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 10px 50px;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+.today-wind {
+  border: 1px solid grey;
+  padding: 20px;
+}
+.today-feels-like {
+  border: 1px solid grey;
+  padding: 20px;
+}
+.today-rain {
+  border: 1px solid grey;
+  padding: 20px;
+}
+/* SUN/timezone */
+.sun-time {
+  display: flex;
+  justify-content: space-around;
+}
+.sun-up {
+  border: 1px solid grey;
+  padding: 10px;
+}
+.sun-down {
+  border: 1px solid grey;
+  padding: 10px;
+}
+.timezone {
+  text-align: center;
+}
+/* SEARCH BAR */
+.searchCity {
+  display: flex;
+  margin: 40px -8px;
+  justify-content: space-evenly;
 }
 .searchBar {
-  padding: 10px;
-  border-radius: 5px;
+  width: 600px;
+  padding: 15px;
+  border-radius: 40px;
   border: none;
-  background: rgb(198, 231, 236);
-  border: 1px solid black;
+  color: rgb(24, 48, 143);
+  background: rgb(126, 221, 255);
+  font-size: 18px;
+  font-family: sans-serif;
 }
+.submit {
+  color: white;
+  background: rgb(72, 196, 238);
+  padding: 10px;
+  border: none;
+  border-radius: 200px;
+  font-size: 15px;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+.submit:hover {
+  background: rgb(163, 224, 246);
+}
+/* END SEARCH BAR */
