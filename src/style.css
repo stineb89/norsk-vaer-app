@@ -3,26 +3,28 @@ body {
 }
 .logo {
   display: block;
-  margin: 0 auto;
+  margin: 0px 20px 60px;
 }
 h1 {
-  font-size: 36px;
+  font-size: 33px;
   text-align: center;
-  font-family: sans-serif;
+  font-family: "Trebuchet MS";
+  margin-top: 40px;
 }
 h3 {
   text-align: center;
   margin: 40px;
+  font-size: 15px;
+  font-family: sans-serif;
 }
 .top {
   display: flex;
-  margin: 30px 0 50px 0;
 }
 .container {
   max-width: 800px;
   background: white;
   display: block;
-  margin: 20px auto;
+  margin: 5px auto;
   padding: 5%;
   border-radius: 5px;
   border: 3px solid blue;
@@ -31,7 +33,7 @@ h3 {
   text-align: center;
   padding: 3%;
   border: 1px solid rgb(213, 233, 239);
-  width: 220px;
+  width: 250px;
   display: block;
   margin: 0 auto;
   font-family: "Macondo", serif;
@@ -44,6 +46,15 @@ h3 {
   font-family: "Macondo", serif;
   font-size: 15px;
 }
+.city-forecast-day {
+  font-size: 18px;
+}
+.city-forecast-icon {
+  font-size: 24px;
+}
+.city-forecast-temp {
+  font-size: 18px;
+}
 .current-temp {
   display: flex;
   justify-content: space-evenly;
@@ -54,6 +65,8 @@ h3 {
   font-weight: bold;
   font-size: 56px;
   text-align: center;
+  border-top: 1px solid rgb(210, 210, 210);
+  padding: 20px;
 }
 .today-icon {
   font-size: 70px;
@@ -66,7 +79,8 @@ h3 {
   font-family: "Macondo", serif;
   text-align: center;
   margin-bottom: 50px;
-  border-bottom: 1px solid grey;
+  margin-top: -30px;
+  border-bottom: 1px solid rgb(210, 210, 210);
   padding: 10px;
 }
 .today-temperature {
@@ -84,17 +98,17 @@ h3 {
   font-family: sans-serif;
 }
 .today-wind {
-  border: 1px solid grey;
+  border: 1px solid rgb(213, 233, 239);
   padding: 20px;
   font-family: "Macondo", serif;
 }
 .today-feels-like {
-  border: 1px solid grey;
+  border: 1px solid rgb(213, 233, 239);
   padding: 20px;
   font-family: "Macondo", serif;
 }
 .today-rain {
-  border: 1px solid grey;
+  border: 1px solid rgb(213, 233, 239);
   padding: 20px;
   font-family: "Macondo", serif;
 }
@@ -104,19 +118,27 @@ h3 {
   justify-content: space-around;
   font-family: "Macondo", serif;
   font-size: 16px;
+  margin-top: -20px;
 }
 .sun-up {
-  border: 1px solid grey;
+  border: 1px solid rgb(213, 233, 239);
   padding: 10px;
 }
 .sun-down {
-  border: 1px solid grey;
+  border: 1px solid rgb(213, 233, 239);
   padding: 10px;
 }
 .timezone {
   text-align: center;
   font-family: "Macondo", serif;
   font-size: 16px;
+  margin-top: 20px;
+  color: rgb(105, 105, 105);
+}
+.line-sun {
+  border-top: 1px solid rgb(210, 210, 210);
+  padding: 20px;
+  margin: 30px 0;
 }
 /* SEARCH BAR */
 .searchCity {
@@ -146,6 +168,65 @@ h3 {
 }
 .submit:hover {
   background: rgb(163, 224, 246);
+}
+/* ____ */
+.function-more {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-gap: 10px;
+  margin: 50px 20px;
+}
+.map-button {
+  background: rgb(192, 150, 191);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  border: 1px solid rgb(131, 92, 147);
+  font-size: 15px;
+  cursor: pointer;
+}
+.danger-button {
+  background: rgb(238, 150, 150);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  border: 1px solid rgb(163, 68, 114);
+  font-size: 15px;
+  cursor: pointer;
+}
+.snow-button {
+  background: rgb(159, 223, 236);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  border: 1px solid rgb(82, 157, 165);
+  font-size: 15px;
+  cursor: pointer;
+}
+.mountain-button {
+  background: rgb(142, 177, 142);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  border: 1px solid rgb(96, 143, 95);
+  font-size: 15px;
+  cursor: pointer;
+}
+.mountain-button:hover {
+  background: rgb(116, 152, 116);
+}
+.snow-button:hover {
+  background: rgb(135, 196, 208);
+}
+.danger-button:hover {
+  background: rgb(209, 122, 122);
+}
+.map-button:hover {
+  background: rgb(167, 126, 166);
 }
 /* FOOTER */
 footer {

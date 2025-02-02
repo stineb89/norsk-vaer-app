@@ -33,50 +33,50 @@
           <div class="forecast-day">
             <div class="city-forecast-day">Man</div>
             <div class="city-forecast-icon">🌤</div>
-            <div class="city-forecast-temp">18֯°C/F</div>
+            <div class="city-forecast-temp">18֯°C</div>
           </div>
           <div class="forecast-day">
             <div class="city-forecast-day">Tir</div>
             <div class="city-forecast-icon">🌤</div>
-            <div class="city-forecast-temp">18֯֯°C/F</div>
+            <div class="city-forecast-temp">18֯֯°C</div>
           </div>
           <div class="forecast-day">
             <div class="city-forecast-day">Ons</div>
             <div class="city-forecast-icon">🌤</div>
-            <div class="city-forecast-temp">18°C/F</div>
+            <div class="city-forecast-temp">18°C</div>
           </div>
           <div class="forecast-day">
             <div class="city-forecast-day">Tor</div>
             <div class="city-forecast-icon">🌤</div>
-            <div class="city-forecast-temp">18֯֯°C/F</div>
+            <div class="city-forecast-temp">18֯֯°C</div>
           </div>
           <div class="forecast-day">
             <div class="city-forecast-day">Fre</div>
             <div class="city-forecast-icon">🌤</div>
-            <div class="city-forecast-temp">18֯°C/F</div>
+            <div class="city-forecast-temp">18֯°C</div>
           </div>
           <div class="forecast-day">
             <div class="city-forecast-day">Lør</div>
             <div class="city-forecast-icon">🌤</div>
-            <div class="city-forecast-temp">18֯֯°C/F</div>
+            <div class="city-forecast-temp">18֯֯°C</div>
           </div>
           <div class="forecast-day">
             <div class="city-forecast-day">Søn</div>
             <div class="city-forecast-icon">🌤</div>
-            <div class="city-forecast-temp">18֯°C/F</div>
+            <div class="city-forecast-temp">18֯°C</div>
           </div>
         </div>
         <hr />
-        <form class="searchCity">
+        <form class="searchCity" id="search-form">
           <input
             type="search"
             class="searchBar"
+            id="searchCity"
             placeholder="Søk etter en by..."
           />
           <input type="submit" class="submit" value="Submit" />
         </form>
-        <hr />
-        <h2 class="city-name">Oslo</h2>
+        <h2 class="city-name" id="city">Oslo</h2>
         <div class="today-desctiption">Skyfri himmel og sol</div>
 
         <div class="current-temp">
@@ -94,15 +94,19 @@
           <div class="today-feels-like"><strong>Føles som:</strong> -4</div>
           <div class="today-rain"><strong>Regn:</strong> 0,2 mm</div>
         </div>
-        <hr />
-        <h3>Solnedgang/Soloppgang</h3>
+
+        <h3 class="line-sun">Solnedgang/Soloppgang</h3>
         <div class="sun-time">
           <div class="sun-up"><strong>Sol opp</strong> 09:45</div>
           <div class="sun-down"><strong>Sol ned</strong> 13:34</div>
         </div>
-
-        <h3>Tidsone</h3>
-        <div class="timezone">Europa/Oslo</div>
+        <div class="function-more">
+          <button class="map-button">Kart</button>
+          <button class="danger-button">Farevarsler</button>
+          <button class="snow-button">Snødybder</button>
+          <button class="mountain-button">Fjelloverganger</button>
+        </div>
+        <div class="timezone">📍 Du befinner deg nå i Europa/Oslo 📍</div>
       </main>
     </div>
     <footer>
