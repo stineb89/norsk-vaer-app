@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Macondo&family=Playwrite+VN:wght@100..400&family=Satisfy&family=Shadows+Into+Light&family=Sixtyfour+Convergence:SCAN@7&display=swap"
       rel="stylesheet"
     />
+    <script src="https://momentjs.com/downloads/moment-with-locales.min.js"></script>
     <title>Norsk værapp - eget prosjekt</title>
   </head>
   <body>
@@ -26,7 +27,9 @@
         <h1>Yr - din personlige vær app</h1>
       </header>
       <hr />
-      <div class="now-time">I dag er det søndag 26. januar 2025, kl. 11:11</div>
+      <div class="now-time">
+        <span id="time"> </span>
+      </div>
       <hr />
       <main>
         <div class="forecast">
@@ -81,7 +84,7 @@
 
         <div class="current-temp">
           <div class="today-icon">🌤</div>
-          <div class="today-temperature">
+          <div class="today-temperature" id="temperature">
             20°
             <span class="celsius-current">C</span>/<span class="fah-current"
               >F</span
